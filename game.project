@@ -1,0 +1,14 @@
+[bootstrap]
+main_collection = /main/proxy.collectionc
+render = /render.renderc
+
+[project]
+custom_resources = main/,common/,assets/
+dependencies#0 = https://github.com/britzl/defold-orthographic/archive/refs/tags/3.3.1.zip
+
+[script]
+shared_state = 1
+
+[input]
+game_binding = /builtins/input/all.input_bindingc
+

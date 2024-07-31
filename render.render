@@ -1,0 +1,5 @@
+script: "/common/render_script/orthographic.render_script"
+render_resources {
+  name: "quad"
+  path: "/common/materials/quad.material"
+}

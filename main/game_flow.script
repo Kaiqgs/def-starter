@@ -1,0 +1,46 @@
+local main = require("main.main")
+local util = require("common.util")
+
+local TO_SCENE = "to_scene"
+local message_mapping = {
+    -- [main.flow.end_game] = function(_, _, _, _)
+    --     print("going to menu?")
+    --     msg.post(main.ids.scene_manager, TO_SCENE, { index = main.scenes.menu })
+    -- end,
+    -- [main.flow.start_game] = function(...)
+    --     world.reset_game()
+    --     msg.post(main.ids.scene_manager, TO_SCENE, { index = main.scenes.game })
+    -- end,
+    -- [main.flow.next_game] = function(...)
+    --     world.next_game()
+    --     msg.post(main.ids.scene_manager, TO_SCENE, { index = main.scenes.game })
+    -- end,
+}
+
+function init(self)
+    msg.post("@render:", "resize", { width = main.width * 2, height = main.height * 2 })
+    -- persistence.set_application_id("piratejam#15")
+    -- persistence.load(main.persistence.game_info)
+    -- persistence.load(main.persistence.player_info)
+    -- persistence.set(
+    --     main.persistence.player_info,
+    --     "identifier",
+    --     persistence.get(main.persistence.player_info, "identifier", suid.rnd())
+    -- )
+end
+function on_input(self, action_id, _)
+    -- if action_id == hash("exit") then
+    --     msg.post(".", "win_lose_condition")
+    -- end
+end
+
+function update(self, dt)
+    -- persistence.set(
+    --     main.persistence.game_info,
+    --     "play_time",
+    --     persistence.get(main.persistence.game_info, "play_time", 0) + dt,
+    --     true
+    -- )
+end
+
+on_message = util.on_message_map(message_mapping)

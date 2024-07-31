@@ -1,0 +1,10 @@
+{
+  "workspace.library": [
+    "common/headers/"
+  ],
+  "diagnostics.disable": [
+    "missing-parameter",
+    "lowercase-global"
+  ],
+  "runtime.version": "Lua 5.1"
+}
