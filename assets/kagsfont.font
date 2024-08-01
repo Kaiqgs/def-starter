@@ -1,0 +1,6 @@
+font: "/assets/font/kagsfont.ttf"
+material: "/builtins/fonts/font.material"
+size: 120
+antialias: 0
+shadow_x: 1.0
+characters: " !\"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"

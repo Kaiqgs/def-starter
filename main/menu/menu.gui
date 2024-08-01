@@ -1,3 +1,50 @@
-script: ""
+script: "/main/menu/menu.gui_script"
+fonts {
+  name: "kagsfont"
+  font: "/assets/kagsfont.font"
+}
+nodes {
+  position {
+    x: 34.16482
+    y: 46.581676
+  }
+  scale {
+    x: 0.1
+    y: 0.1
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "play"
+  font: "kagsfont"
+  id: "play"
+  layer: "button"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 36.940556
+    y: 17.273312
+  }
+  scale {
+    x: 0.1
+    y: 0.1
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "exit"
+  font: "kagsfont"
+  id: "exit"
+  layer: "button"
+  inherit_alpha: true
+}
+layers {
+  name: "button"
+}
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT

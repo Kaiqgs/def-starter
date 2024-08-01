@@ -1,3 +1,4 @@
+local _gui = require("common._gui")
 local stinger = require("common.gameobjects.stinger.stinger")
 local util = require("common.util")
 local duration = 2
@@ -86,9 +87,13 @@ stinger.shader_animation = util.on_message_map({
 local tile_size = 8
 local display_size = vmath.vector3(64, 64, 0)
 local proxy_collection = "proxy"
+_gui.default_click_offset = vmath.vector3(1, -1, 0)
+_gui.default_shadow_color = vmath.vector4(0, 0, 0, 1)
+_gui.default_shadow_offset = vmath.vector3(1, -1, 0)
 local M = {
-    width = 640,
-    height = 360,
+    width = display_size.x,
+    height = display_size.y,
+    display_size = display_size,
     tile_size = tile_size,
     tile_vec = vmath.vector3(tile_size, tile_size, 0),
     flow = {
@@ -99,14 +104,14 @@ local M = {
     ids = {
         scene_manager = proxy_collection .. ":/controller#scene_manager",
         game_flow = proxy_collection .. ":/controller#game_flow",
-        quad_texture = "/quad#screen"
+        quad_texture = "/quad#screen",
     },
     scenes = {
         game = 1,
         menu = 2,
     },
     colllision = {
-        default = hash("default")
+        default = hash("default"),
     },
 }
 
