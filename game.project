@@ -4,7 +4,7 @@ render = /render.renderc
 
 [project]
 custom_resources = main/,common/,assets/
-dependencies#0 = https://github.com/britzl/defold-orthographic/archive/refs/tags/3.3.1.zip
+dependencies = 
 
 [script]
 shared_state = 1
