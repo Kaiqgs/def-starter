@@ -85,7 +85,7 @@ stinger.shader_animation = util.on_message_map({
     -- end,
 })
 local tile_size = 8
-local display_size = vmath.vector3(64, 64, 0)
+local display_size = vmath.vector3(320, 180, 0)
 local proxy_collection = "proxy"
 _gui.default_click_offset = vmath.vector3(1, -1, 0)
 _gui.default_shadow_color = vmath.vector4(0, 0, 0, 1)

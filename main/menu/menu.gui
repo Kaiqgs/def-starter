@@ -1,7 +1,7 @@
 script: "/main/menu/menu.gui_script"
 fonts {
   name: "kagsfont"
-  font: "/assets/kagsfont.font"
+  font: "/assets/04B.font"
 }
 nodes {
   position {
